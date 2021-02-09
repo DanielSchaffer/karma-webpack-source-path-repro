@@ -1,4 +1,4 @@
-export class ExampleService {
+export class ExampleJsService {
   static get EXAMPLE_OK() { return 'ok'; }
 
   constructor(dep) {
@@ -6,6 +6,6 @@ export class ExampleService {
   }
 
   doExampleStuff(input) {
-    return this.dep.doDependencyStuff(input.toString(), input) === ExampleService.EXAMPLE_OK;
+    return this.dep.doDependencyStuff(input.toString(), input) === ExampleJsService.EXAMPLE_OK;
   }
 }

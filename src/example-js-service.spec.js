@@ -2,15 +2,15 @@ import { expect } from 'chai';
 
 import { dependencyServiceFixture } from '../test/fixtures';
 
-import { ExampleTsService } from './example-ts-service';
+import { ExampleJsService } from './example-js-service';
 
-describe('ExampleTsService', () => {
+describe('ExampleJsService', () => {
   let dep;
   let exampleService;
 
   beforeEach(() => {
     dep = dependencyServiceFixture();
-    exampleService = new ExampleTsService(dep);
+    exampleService = new ExampleJsService(dep);
   });
   afterEach(() => {
     dep = undefined;
